@@ -1,0 +1,160 @@
+:root{
+    --title-font: "Roboto", sans-serif;
+    --logo-font: "Raleway", sans-serif;
+
+    --color-title: #757575;
+    --main-bg-cl: #FFFFFF;
+    --main-agent-bg: #F5F4FA;
+    --footer-bg: #2F303A;
+    --icon-bg: #2196F3;
+    --color-h: #212121;
+}
+body{
+    font-family: var(--title-font);
+    background-color: var(--main-bg-cl);
+    color: var(--color-title);
+}
+.navigation{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    color: var(--color-h);
+    text-decoration: none;
+}
+.navigation:hover,
+.navigation:focus{
+    color: var(--icon-bg);
+}
+.adress-company{
+font-style: 400;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1;
+letter-spacing: 0.02em;
+color: var(--color-title);
+}
+.adress-company:hover{
+    color: var(--icon-bg);
+}
+.hero{
+    font-style: 400;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--main-bg-cl);
+    background: var(--footer-bg);
+}
+.enter{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    color: var(--color-h);
+    background-color: var(--main-agent-bg);
+}
+.enter:hover{
+    color: var(--main-bg-cl);
+    background-color: var(--icon-bg);
+}
+.features{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--color-h);
+}
+.team{
+    background-color: var(--main-agent-bg);
+}
+.footer-bg{
+     background-color: var(--footer-bg);
+}
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-h);
+
+}
+.name-agents{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: var(--color-h);
+
+}
+.specifical{
+    font-size: 16px;
+    line-height: 1.2;
+
+    letter-spacing: 0.03em;
+}
+.points{
+    list-style-type: none;
+}
+.adreess-company{
+    font-style: inherit;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: var(--main-bg-cl);
+
+}
+
+.logo{
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.logo-footer{
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    color: var(--main-bg-cl);
+}
+.web-blue{
+    color: var(--icon-bg);
+}
+.name-links{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--color-h);
+}
+.line{
+    text-decoration: none;
+}
+.categories{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.03em;
+color: var(--color-titles);
+}
