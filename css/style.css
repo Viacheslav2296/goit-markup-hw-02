@@ -27,19 +27,46 @@ body{
 .navigation:focus{
     color: var(--icon-bg);
 }
+.studio{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    color: var(--color-h);
+    text-decoration: none;
+}
+.studio:visited,
+.studio:hover,
+.studio:active{
+    color: var(--icon-bg);
+}
+.portfolio{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    color: var(--color-h);
+    text-decoration: none;
+}
+.portfolio:visited,
+.portfolio:hover,
+.portfolio:active{
+     color: var(--icon-bg);
+}
 .adress-company{
-font-style: 400;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.02em;
 color: var(--color-title);
+text-decoration: none;
 }
 .adress-company:hover{
     color: var(--icon-bg);
 }
 .hero{
-    font-style: 400;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -52,6 +79,7 @@ color: var(--color-title);
     background: var(--footer-bg);
 }
 .enter{
+    font-family: var(--title-font);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
@@ -148,13 +176,13 @@ line-height: 2;
 letter-spacing: 0.06em;
 color: var(--color-h);
 }
-.line{
-    text-decoration: none;
-}
 .categories{
 font-weight: 400;
 font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.03em;
-color: var(--color-titles);
+color: var(--color-title);
+}
+.line{
+    text-decoration: none;
 }
