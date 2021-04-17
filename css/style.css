@@ -134,6 +134,8 @@ text-decoration: none;
     background-color: var(--footer-bg);
 }
 .main-hero{
+    padding-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -222,6 +224,12 @@ text-decoration: none;
 .footer-bg{
      background-color: var(--footer-bg);
 }
+.card-team{
+    padding: 30px 60px;
+    border: 1px solid #eee;
+    border-radius: 0px 0px 4px 4px;
+    border-top: none;
+}
 .title{
     padding-bottom: 50px;
 
@@ -234,6 +242,7 @@ text-decoration: none;
 
 }
 .name-agents{
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
