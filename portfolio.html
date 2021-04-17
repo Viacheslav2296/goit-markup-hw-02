@@ -15,105 +15,129 @@
 <body>
     <!-- Шапка сайта -->
     <header>
-        <a class="logo" href="index.html"><span class="web-blue">Web</span>tudio</a>
-        <nav>
-            <ul class="points">
-                <li>
-                    <a class="navigation" href="index.html">Студия</a>
+
+        <nav class="container main-nav">
+            <a class="logo" href="index.html"><span class="web-blue">Web</span>tudio</a>
+            <ul class="points list site-nav">
+                <li class="navigation">
+                    <a class="link" href="index.html">Студия</a>
                 </li>
-                <li>
-                    <a class="navigation portfolio" href="portfolio.html">Портфолио</a>
+                <li class="navigation">
+                    <a class="link portfolio" href="portfolio.html">Портфолио</a>
                 </li>
-                <li>
-                    <a class="navigation" href="">Контакты</a>
+                <li class="navigation">
+                    <a class="link" href="">Контакты</a>
                 </li>
             </ul>
+            <ul class="points list auth-nav">
+                <li class="navigation"><a class="adress-company" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="navigation"><a class="adress-company" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
         </nav>
-        <ul class="points">
-            <li><a class="adress-company" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="adress-company" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
 
     </header>
     <!--Основная часть-->
     <main>
-        <section>
-            <ul class="points">
-                <li><button class="enter" type="button">Все</button></li>
-                <li><button class="enter" type="button">Веб-сайты</button></li>
-                <li><button class="enter" type="button">Приложения</button></li>
-                <li><button class="enter" type="button">Дизайн</button></li>
-                <li><button class="enter" type="button">Маркетинг</button></li>
-            </ul>
-            <ul class="points">
-                <li>
-                    <a class="line" href=""><img src="./images/example.jpg" alt="пример" width="370">
-                        <h2 class="name-links">Технокряк</h2>
-                        <p class="categories">Веб-сайт</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="line" href=""><img src="./images/example1.jpg" alt="пример" width="370">
-                        <h2 class="name-links">Постер New Orlean vs Golden Star</h2>
-                        <p class="categories">Дизайн</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="line" href=""><img src="./images/example2.jpg" alt="пример" width="370">
-                        <h2 class="name-links">Ресторан Seafood</h2>
-                        <p class="categories">Приложение</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="line" href=""><img src="./images/example3.jpg" alt="пример" width="370">
-                        <h2 class="name-links">Проект Prime</h2>
-                        <p class="categories">Маркетинг</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="line" href=""><img src="./images/example4.jpg" alt="пример" width="370">
-                        <h2 class="name-links">Проект Boxes</h2>
-                        <p class="categories">Приложение</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="line" href=""><img src="./images/example5.jpg" alt="пример" width="370">
-                        <h2 class="name-links">Inspiration has no Borders</h2>
-                        <p class="categories">Веб-сайт</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="line" href=""><img src="./images/example6.jpg" alt="пример" width="370">
-                        <h2 class="name-links">Издание Limited Edition</h2>
-                        <p class="categories">Дизайн</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="line" href=""><img src="./images/example7.jpg" alt="пример" width="370">
-                        <h2 class="name-links">Проект LAB</h2>
-                        <p class="categories">Маркетинг</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="line" href=""><img src="./images/example8.jpg" alt="пример" width="370">
-                        <h2 class="name-links">Growing Business</h2>
-                        <p class="categories">Приложение</p>
-                    </a>
-                </li>
-            </ul>
+        <section class="section">
+            <div class="container">
+                <ul class="points filtr-list">
+                    <li class="filtr-list-item"><button class="enter" type="button">Все</button></li>
+                    <li class="filtr-list-item"><button class="enter" type="button">Веб-сайты</button></li>
+                    <li class="filtr-list-item"><button class="enter" type="button">Приложения</button></li>
+                    <li class="filtr-list-item"><button class="enter" type="button">Дизайн</button></li>
+                    <li class="filtr-list-item"><button class="enter" type="button">Маркетинг</button></li>
+                </ul>
+                <ul class="points flex-container">
+                    <li class="portfolio-card">
+                        <a class="line" href=""><img src="./images/example.jpg" alt="пример" width="370">
+                            <div class="portf-card-text">
+                                <h2 class="name-links">Технокряк</h2>
+                                <p class="categories">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card">
+                        <a class="line" href=""><img src="./images/example1.jpg" alt="пример" width="370">
+                            <div class="portf-card-text">
+                                <h2 class="name-links">Постер New Orlean vs Golden Star</h2>
+                                <p class="categories">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card">
+                        <a class="line" href=""><img src="./images/example2.jpg" alt="пример" width="370">
+                            <div class="portf-card-text">
+                                <h2 class="name-links">Ресторан Seafood</h2>
+                                <p class="categories">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card">
+                        <a class="line" href=""><img src="./images/example3.jpg" alt="пример" width="370">
+                            <div class="portf-card-text">
+                                <h2 class="name-links">Проект Prime</h2>
+                                <p class="categories">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card">
+                        <a class="line" href=""><img src="./images/example4.jpg" alt="пример" width="370">
+                            <div class="portf-card-text">
+                                <h2 class="name-links">Проект Boxes</h2>
+                                <p class="categories">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card">
+                        <a class="line" href=""><img src="./images/example5.jpg" alt="пример" width="370">
+                            <div class="portf-card-text">
+                                <h2 class="name-links">Inspiration has no Borders</h2>
+                                <p class="categories">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card">
+                        <a class="line" href=""><img src="./images/example6.jpg" alt="пример" width="370">
+                            <div class="portf-card-text">
+                                <h2 class="name-links">Издание Limited Edition</h2>
+                                <p class="categories">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card">
+                        <a class="line" href=""><img src="./images/example7.jpg" alt="пример" width="370">
+                            <div class="portf-card-text">
+                                <h2 class="name-links">Проект LAB</h2>
+                                <p class="categories">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card">
+                        <div class="portf-card-text">
+                            <a class="line" href=""><img src="./images/example8.jpg" alt="пример" width="370">
+                                <h2 class="name-links">Growing Business</h2>
+                                <p class="categories">Приложение</p>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <!-- Футер -->
-    <<footer class="footer-bg">
-        <a class="logo-footer" href="index.html"><span class="web-blue">Web</span>Studio</a>
-        <address class="adreess-company">
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="points">
-                <li><a class="adress-company" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="adress-company" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
-        </footer>
+    <footer class="footer-bg">
+        <div class="container">
+            <a class="logo-footer" href="index.html"><span class="web-blue">Web</span>Studio</a>
+            <address class="adreess-company">
+                <p>г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="points list">
+                    <li><a class="adress-company" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="adress-company" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+    </footer>
 
 </body>
 
