@@ -14,7 +14,52 @@ body{
     background-color: var(--main-bg-cl);
     color: var(--color-title);
 }
-.navigation{
+/*reset styles*/
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section-gallery{
+    padding-bottom: 94px;
+}
+
+/* Site nav */
+
+.site-nav .link{
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -23,18 +68,12 @@ body{
     color: var(--color-h);
     text-decoration: none;
 }
-.navigation:hover,
-.navigation:focus{
+.site-nav .link:hover,
+.site-nav .link:focus{
     color: var(--icon-bg);
 }
-.studio{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-
+.site-nav .link .studio{
     color: var(--color-h);
-    text-decoration: none;
 }
 .studio:visited,
 .studio:hover,
@@ -55,6 +94,23 @@ body{
 .portfolio:active{
      color: var(--icon-bg);
 }
+.site-nav {
+  display: flex;
+  margin-left: 90px;
+}
+.site-nav .navigation + .navigation {
+  margin-left: 50px;
+}
+
+/* Adress nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .navigation + .navigation {
+  margin-left: 50px;
+}
+
 .adress-company{
 font-weight: 500;
 font-size: 14px;
@@ -66,7 +122,18 @@ text-decoration: none;
 .adress-company:hover{
     color: var(--icon-bg);
 }
+
+/*Hero*/
 .hero{
+  width: calc(100% / 12 * 8);
+}
+.dark-hero{
+    padding-top: 200px;
+    padding-bottom: 280px;
+
+    background-color: var(--footer-bg);
+}
+.main-hero{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -79,6 +146,13 @@ text-decoration: none;
     background: var(--footer-bg);
 }
 .enter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+
+    border-radius: 5px;
+
     font-family: var(--title-font);
     font-weight: 700;
     font-size: 16px;
@@ -95,7 +169,10 @@ text-decoration: none;
     color: var(--main-bg-cl);
     background-color: var(--icon-bg);
 }
+
+/*Преимущества*/
 .features{
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -104,6 +181,41 @@ text-decoration: none;
 
     color: var(--color-h);
 }
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.list-card{
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    text-align: left;
+}
+.card-set .list-card + .list-card {
+  margin-left: 30px;
+}
+
+/*Чем мы занимаемся */
+
+.list-card-imagis{
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    text-align: center;
+}
+.list-card-imagis .imagis-card + .imagis-card {
+  margin-left: 30px;
+}
+
+/*Наша команда*/
+
+.list-card-team{
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    text-align: center;
+}
+.card-set .list-card-team + .list-card-team {
+  margin-left: 30px;
+}
+
 .team{
     background-color: var(--main-agent-bg);
 }
@@ -111,6 +223,8 @@ text-decoration: none;
      background-color: var(--footer-bg);
 }
 .title{
+    padding-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -137,6 +251,15 @@ text-decoration: none;
 .points{
     list-style-type: none;
 }
+
+/*footer*/
+.footer-bg{
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .adreess-company{
     font-style: inherit;
     font-size: 14px;
@@ -185,4 +308,36 @@ color: var(--color-title);
 }
 .line{
     text-decoration: none;
+}
+
+
+
+/*Вторая страница*/
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.portfolio-card {
+    flex-basis: calc((100% - 30px * 3) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.portf-card-text {
+    padding: 20px 24px;
+    border: 1px solid #eee;
+    border-top: none;
+}
+.flex-element:nth-child(3n){
+    margin-right: 0;
+}
+.filtr-list{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.filtr-list-item:not(:last-child) {
+    margin-right: 8px;
 }
