@@ -193,6 +193,9 @@ text-decoration: none;
 
     color: var(--color-h);
 }
+.features-paragraf{
+    line-height: 1.71;
+}
 .card-set {
   display: flex;
   flex-wrap: wrap;
