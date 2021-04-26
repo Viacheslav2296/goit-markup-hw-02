@@ -352,28 +352,32 @@ ul {
     margin-right: 30px;
 }
 .clients-link{
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
+    content: "";
     width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
     border-radius: 4px;
+    color: #afb1b8;
 }
-.clients-link:hover,
-.clients-link:focus{
+.clients-item .clients-link:hover,
+.clients-item .clients-link:focus{
     border-color: #2196F3;
+    fill: currentColor;
+    color: #2196F3;
   
 }
-.clients-link .clients-svg:hover,
+/* .clients-link .clients-svg:hover,
 .clients-link .clients-svg:focus{
     fill: currentColor;
     color: #2196F3;
 
-}
+} */
 .clients-svg{
     fill: currentColor;
-    color:  var(--icon-color);
 }
 
 /*footer*/
@@ -384,15 +388,23 @@ ul {
     padding-bottom: 60px;
 }
 
-.adreess-company{
+.adreess-company-footer{
+  
     margin-top: 20px;
     font-style: inherit;
+    
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 
     color: var(--main-bg-cl);
-
+    text-decoration: none;
+}
+.adreess-company-footer p{
+      padding-bottom: 9px;
+}
+.adreess-company-footer .adress-company{
+    padding-bottom: 9px;
 }
 
 .logo{
